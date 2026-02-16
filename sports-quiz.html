@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>Quizora - Sports Quiz</title>
+        <meta name="description"
+            content="Think you're a true sports fan? Prove it with this high-energy Sports quiz covering teams, players, tournaments, and historic moments." />
+
+        <link rel="stylesheet" href="/css/layout.css" />
+        <link rel="stylesheet" href="/css/quiz-page-layout.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100..900&display=swap" rel="stylesheet" />
+
+        <link rel="icon" href="/quizora.ico">
+    </head>
+
+    <body data-category="sports" class="no-nav-active">
+
+        <!-- HEADER -->
+
+        <header>
+            <button class="hamburger">
+                <span class="hamburger-btns"></span>
+                <span class="hamburger-btns"></span>
+                <span class="hamburger-btns"></span>
+            </button>
+
+            <h1 id="title">Quizora - Test your knowledge</h1>
+
+            <div id="header-actions">
+                <button class="toggle-btn light">🌞</button>
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn">Register</a>
+            </div>
+        </header>
+
+        <div class="nav-backdrop"></div>
+
+        <!-- NAVBAR -->
+
+        <nav>
+            <div class="nav-btns">
+                <a href="home.html">Home</a>
+                <a href="timer-quiz.html">Timer Quiz</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+
+            <div id="nav-actions">
+                <button class="toggle-btn light">🌞</button>
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn">Register</a>
+            </div>
+        </nav>
+
+        <!-- QUIZ MODAL -->
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <p>Your quiz has been successfully submitted.</p>
+            </div>
+        </div>
+
+        <!-- QUIZ SECTION -->
+
+        <section id="quiz-section">
+            <h1>Sports Quiz</h1>
+
+            <select id="quiz-difficulty">
+                <option value="" disabled selected>Choose the difficulty level</option>
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+
+            <form id="quizForm"></form>
+
+            <button type="button" id="submitBtn" style="display:none;">
+                Submit Quiz
+            </button>
+
+            <p id="score"></p>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+            <p>&copy; 2025 Quizora. All rights reserved.</p>
+        </footer>
+
+        <script src="/js/light-dark-mode.js"></script>
+        <script src="/js/hamburger.js"></script>
+        <script src="/js/quiz-modal.js"></script>
+        <script src="/js/quiz-logic.js"></script>
+
+    </body>
+
+</html>

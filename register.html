@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Online Quiz - Registration</title>
+        <link rel="stylesheet" href="auth-layout.css">
+    </head>
+
+    <body>
+        <main class="container">
+            <h1 class="heading">Register</h1>
+
+            <form class="form-container" action="" method="">
+                <div class="form-group">
+                    <label class="label" for="username">User Name</label>
+                    <input class="input" type="text" id="username" name="username" placeholder="Enter User Name"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label class="label" for="email">Email</label>
+                    <input class="input" type="email" id="email" name="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="label" for="createpassword">Create Password</label>
+                    <input class="input" type="password" id="createpassword" name="createpassword"
+                        placeholder="Enter Password" required pattern=".{6,}"
+                        title="Password must be at least 6 characters">
+                </div>
+
+                <div class="form-group">
+                    <label class="label" for="confirmpassword">Confirm Password</label>
+                    <input class="input" type="password" id="confirmpassword" name="confirmpassword"
+                        placeholder="Confirm Password" required>
+                </div>
+
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms & Conditions</a></label>
+                </div>
+
+                <button class="btn" type="submit">Sign Up</button>
+
+                <div class="login-link">
+                    <span>Already have an account? </span>
+                    <a href="login.html">Login now</a>
+                </div>
+            </form>
+        </main>
+    </body>
+
+</html>

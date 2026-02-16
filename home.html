@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quizora - Home</title>
+        <meta name="description" content="Online quiz platform to play fun and engaging quizzes with your friends">
+
+        <link rel="stylesheet" href="/css/layout.css">
+        <link rel="stylesheet" href="/css/home.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="/quizora.ico">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/quizora-96x96.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/images/quizora-192x192.png">
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+
+        <header>
+            <button class="hamburger">
+                <span class="hamburger-btns"></span>
+                <span class="hamburger-btns"></span>
+                <span class="hamburger-btns"></span>
+            </button>
+
+            <h1 id="title">Quizora - Test your knowledge</h1>
+
+            <div id="header-actions">
+                <button class="toggle-btn light">🌞</button>
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn">Register</a>
+            </div>
+        </header>
+
+        <div class="nav-backdrop"></div>
+
+        <!-- NAVBAR -->
+
+        <nav>
+            <div class="nav-btns">
+                <a href="home.html">Home</a>
+                <a href="timer-quiz.html">Timer Quiz</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+
+            <div id="nav-actions">
+                <button class="toggle-btn light">🌞</button>
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn">Register</a>
+            </div>
+        </nav>
+
+        <!-- QUIZ SECTION -->
+
+        <section id="quiz-section">
+            <h2>Choose Your Quiz</h2>
+
+            <div class="quiz-cards">
+                <a href="/geography-quiz.html" class="quiz-card">
+                    <img src="/images/geography.jpg" alt="Geography Quiz" loading="lazy">
+                    <p>Travel the world through questions on countries, capitals, maps, and global wonders.</p>
+                </a>
+
+                <a href="/sports-quiz.html" class="quiz-card">
+                    <img src="/images/sports.jpg" alt="Sports Quiz" loading="lazy">
+                    <p>Test your knowledge of sports, players, tournaments, and iconic moments.</p>
+                </a>
+
+                <a href="/film-&-tv-quiz.html" class="quiz-card">
+                    <img src="/images/film_&_tv.jpg" alt="Film & TV Quiz" loading="lazy">
+                    <p>Explore cinema classics and binge-worthy TV series.</p>
+                </a>
+
+                <a href="/science-quiz.html" class="quiz-card">
+                    <img src="/images/science.jpg" alt="Maths Quiz" loading="lazy">
+                    <p>Experiment with your brainpower in this science challenge.</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+
+        <footer>
+            <p>&copy; 2025 Quizora. All rights reserved.</p>
+        </footer>
+
+        <script src="/js/light-dark-mode.js"></script>
+        <script src="/js/navbar.js"></script>
+        <script src="/js/hamburger.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Quizora - Contact Us</title>
+        <meta name="description" content="Challenging math multiple choice quiz to test your knowledge.">
+
+        <link rel="stylesheet" href="/css/layout.css">
+        <link rel="stylesheet" href="/css/contact.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100..900&display=swap" rel="stylesheet">
+
+        <link rel="icon" href="/quizora.ico">
+
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/quizora-96x96.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="/images/quizora-192x192.png">
+    </head>
+
+    <body>
+
+        <!-- HEADER -->
+
+        <header>
+            <button class="hamburger">
+                <span class="hamburger-btns"></span>
+                <span class="hamburger-btns"></span>
+                <span class="hamburger-btns"></span>
+            </button>
+
+            <h1 id="title">Quizora - Test your knowledge</h1>
+
+            <div id="header-actions">
+                <button class="toggle-btn light">🌞</button>
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn">Register</a>
+            </div>
+        </header>
+
+        <div class="nav-backdrop"></div>
+
+        <!-- NAVBAR -->
+
+        <nav>
+            <div class="nav-btns">
+                <a href="home.html">Home</a>
+                <a href="timer-quiz.html">Timer Quiz</a>
+                <a href="contact.html">Contact Us</a>
+                <a href="about.html">About Us</a>
+            </div>
+
+            <div id="nav-actions">
+                <button class="toggle-btn light">🌞</button>
+                <a href="login.html" class="btn">Login</a>
+                <a href="register.html" class="btn">Register</a>
+            </div>
+        </nav>
+
+        <!-- CONTACT SECTION -->
+
+        <main class="container">
+            <h1 class="heading">Contact us</h1>
+
+            <form class="form-container" action="" method="">
+                <div class="form-group">
+                    <label class="label" for="name">Name: </label>
+                    <input class="input" type="text" id="name" name="name" placeholder="Enter Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="label" for="email">Email: </label>
+                    <input class="input" type="email" id="email" name="email" placeholder="Enter Email" required>
+                </div>
+
+                <div class="form-group">
+                    <label class="label" for="query">Write your query: </label>
+                    <textarea name="query" id="query" placeholder="What's your query?"></textarea>
+                </div>
+
+                <button class="btn" type="submit">Submit your query</button>
+            </form>
+        </main>
+
+        <!-- FOOTER -->
+
+        <footer>
+            <p>&copy; 2025 Quizora. All rights reserved.</p>
+        </footer>
+
+        <script src="/js/light-dark-mode.js"></script>
+        <script src="/js/navbar.js"></script>
+        <script src="/js/hamburger.js"></script>
+    </body>
+
+</html>
